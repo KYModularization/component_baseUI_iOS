@@ -28,12 +28,12 @@
 
 - (void)setConfig
 {
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeTextSize) name:FONT_SIZE_CHANGE_NOTIFICATION_NAME object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeTextSize) name:@"FONT_SIZE_CHANGE_NOTIFICATION_NAME" object:nil];
 }
 
 - (void)changeTextSize
 {
-    FontSize size = (FontSize)([[[NSUserDefaults standardUserDefaults] valueForKey:FONT_SIZE_KEY] integerValue]);
+    FontSize size = (FontSize)([[[NSUserDefaults standardUserDefaults] valueForKey:@"FONT_SIZE_KEY"] integerValue]);
     UIFont *font = self.titleLabel.font;
     self.titleLabel.font = [font fontWithSize:font.pointSize + size];
 }

@@ -12,6 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YLDButton : UIButton
 
+typedef NS_ENUM(NSInteger, FontSize) {
+    FontSizeNormal = 0,
+    FontSizeBig = 2,
+    FontSizeLarge = 4,
+    FontSizeMax = 6
+};
+
 @end
 
 NS_ASSUME_NONNULL_END
