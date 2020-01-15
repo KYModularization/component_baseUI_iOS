@@ -1,0 +1,33 @@
+{
+  "name": "component_baseUI_iOS",
+  "version": "0.0.1",
+  "summary": "快医科技UI基础类",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/KYModularization/component_baseUI_iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liangyujuan": "18730231873@163.com"
+  },
+  "source": {
+    "git": "https://github.com/KYModularization/component_baseUI_iOS.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "component_baseUI_iOS/Classes/**/*",
+  "dependencies": {
+    "SDWebImage": [
+      "~> 4.2.3"
+    ],
+    "Masonry": [
+      "~> 1.1"
+    ],
+    "MBProgressHUD": [
+      "~> 0.9.1"
+    ]
+  }
+}
