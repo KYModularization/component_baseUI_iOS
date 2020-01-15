@@ -83,14 +83,14 @@ static UserModel *_user;
     NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
     [archiver encodeObject:model forKey:@"userModel"];
     [archiver finishEncoding];
-    NSString *fileName = [DOCUMENT_PATH stringByAppendingPathComponent:@"archiverUserModel"];
+    NSString *fileName = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"archiverUserModel"];
     [data writeToFile:fileName atomically:YES];
 }
 
 
 + (UserModel *)loadModel
 {
-    NSString *fileName = [DOCUMENT_PATH stringByAppendingPathComponent:@"archiverUserModel"];
+    NSString *fileName = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"archiverUserModel"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:fileName];
     if (data)
     {
