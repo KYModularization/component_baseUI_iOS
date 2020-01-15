@@ -15,6 +15,8 @@
 #import "UILabel+Factory.h"
 #import "UITableView+Factory.h"
 #import "UITextField+Factory.h"
+#import "UserModel.h"
+#import "YLDButton.h"
 
 FOUNDATION_EXPORT double component_baseUI_iOSVersionNumber;
 FOUNDATION_EXPORT const unsigned char component_baseUI_iOSVersionString[];
