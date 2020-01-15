@@ -7,6 +7,7 @@
 //
 
 #import "UserModel.h"
+#import <objc/runtime.h>
 
 static UserModel *_user;
 
